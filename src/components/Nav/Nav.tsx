@@ -11,9 +11,9 @@ const Nav = () => {
       </ul>
       {/*Mobile Nav Bar*/}
       <ul
-        className={`md:hidden flex flex-col gap-10 text-medium p-7 pt-20 fixed-top-0 z-50 bg-white w-2/3 h-screen shadow-2xl ${
-          openDrawer ? "visible" : "invisible"
-        } duration-500`}
+        className={`fixed top-0 z-50 bg-white w-2/3 h-screen shadow-2xl
+        md:hidden flex flex-col gap-10 text-medium  p-7 pt-20 duration-500
+        ${openDrawer ? "right-0" : "right-[-100%]"}`}
       >
         <NavLinks />
       </ul>
@@ -21,7 +21,7 @@ const Nav = () => {
         className="text-2xl md:hidden z-50"
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <ion-icon name="menu"></ion-icon>
+        <ion-icon name={openDrawer ? "close" : "menu"}></ion-icon>
       </div>
     </nav>
   );
