@@ -1,8 +1,8 @@
-import Nav from './components/Nav/Nav';
+import Header from './components/Header';
 function App() {
   return (
-    <div className='font-poppins'>
-      <Nav />
+    <div className='font-Poppins'>
+      <Header />
     </div>
   )
 }

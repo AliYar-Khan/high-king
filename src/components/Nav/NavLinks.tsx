@@ -1,3 +1,5 @@
+import React from "react";
+
 const NavLinks = () => {
   const Links = [
     {
@@ -5,7 +7,7 @@ const NavLinks = () => {
       Link: "/",
     },
     {
-      name: "Blogd",
+      name: "Blog",
       Link: "/",
     },
     {
